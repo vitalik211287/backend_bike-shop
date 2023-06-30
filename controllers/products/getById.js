@@ -1,15 +1,13 @@
-// const getAll = require("./getAll");
+const {HttpError} = require('../../helpers')
 const products = require("../../data/velo.json");
+
+
 const getById = async (req, res, next) => {
   try {
     const { id } = req.params;
     const result = products.find((item) => item.id === id);
     if (!result) {
-      res.status(404).json({
-        status: "error",
-        code: 404,
-        message: `Product with id=${id} not found`,
-      });
+      throw HttpError(404, `Product with id=${id} not found`);
     }
     res.json({
       status: "success",
@@ -18,7 +16,9 @@ const getById = async (req, res, next) => {
         result: result,
       },
     });
-  } catch (error) {}
+  } catch (error) {
+   next(error)
+  }
 };
 
 module.exports = getById;
