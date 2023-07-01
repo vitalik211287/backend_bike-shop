@@ -1,13 +1,17 @@
 const express = require("express");
-const productsOperation = require("../../controllers/products");
+const ctrl = require("../../controllers/products");
+const { validateBody } = require("../../middlewares");
+const { addSchema } = require("../../schema");
 const router = express.Router();
 
-router.get("/", productsOperation.getAll);
+router.get("/", ctrl.getAll);
 
-router.get("/:id", productsOperation.getById);
+router.get("/:id", ctrl.getById);
 
-router.post("/", productsOperation.add);
-router.delete("/:id", productsOperation.removeById);
-router.put("/:id", productsOperation.updateById);
+router.post("/", validateBody(addSchema), ctrl.add);
+
+router.delete("/:id", ctrl.removeById);
+
+router.put("/:id", validateBody(addSchema), ctrl.updateById);
 
 module.exports = router;
