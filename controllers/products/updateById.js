@@ -7,7 +7,6 @@ const { addSchema } = require("../../middlewares");
 const updateById = async (req, res, next) => {
   try {
     const { error } = addSchema.validate(req.body);
-    console.log(error);
     if (error) {
       throw HttpError(400, error.message);
     }

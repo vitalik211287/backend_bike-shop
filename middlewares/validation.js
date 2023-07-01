@@ -9,6 +9,7 @@ const addSchema = Joi.object({
     color: Joi.string().required(),
     size: Joi.string().required(),
     favorite: Joi.boolean().truthy("yes").falsy("no").sensitive(),
+    id: Joi.string().required(),
   });
 
   module.exports = addSchema
