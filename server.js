@@ -1,10 +1,11 @@
 const app = require("./app");
 const mongoose = require("mongoose");
+const { DB_HOST } = require("./config");
 mongoose.set("strictQuery", true);
 
 const {
   PORT = 3001,
-  DB_HOST = "mongodb+srv://Vitalik:2656vipO@cluster0.emctnag.mongodb.net/db-contacts?retryWrites=true&w=majority",
+  
 } = process.env;
 
 mongoose
