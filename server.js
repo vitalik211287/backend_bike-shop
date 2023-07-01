@@ -16,6 +16,8 @@ mongoose
     });
   })
   .catch((error) => {
-    console.log(`\x1B[31m Server not running. \x1B[37m Error message: ${error.message}`);
+    console.log(
+      `\x1B[31m Server not running. \x1B[37m Error message: ${error.message}`
+    );
     process.exit(1);
   });
