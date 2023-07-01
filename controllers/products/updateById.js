@@ -11,7 +11,7 @@ const updateById = async (req, res, next) => {
       throw HttpError(400, error.message);
     }
     const { id } = req.params;
-    const idx = products.find((product) => product.id === id);
+    const idx = await products.find((product) => product.id === id);
     if (!idx) {
       throw HttpError(404, `Product with id=${id} not found`);
     }
