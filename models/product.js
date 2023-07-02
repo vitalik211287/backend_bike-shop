@@ -33,9 +33,14 @@ const addSchema = Joi.object({
   id: Joi.string(),
 });
 
+const updateFavoriteSchema = Joi.object({
+  favorite: Joi.boolean().truthy("yes").falsy("no").sensitive().required(),
+});
+
 const schema = {
   addSchema,
-}
+  updateFavoriteSchema,
+};
 
 const Product = model("product", productSchema);
 

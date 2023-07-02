@@ -3,12 +3,15 @@ const getById = require("./getById");
 const add = require("./add");
 const updateById = require("./updateById");
 const removeById = require("./removeById");
+const updateFavorite = require("./updateFavorite");
 const { ctrlWrapper } = require("../../helpers");
+
 
 module.exports = {
   getAll: ctrlWrapper(getAll),
   getById: ctrlWrapper(getById),
   add: ctrlWrapper(add),
   updateById: ctrlWrapper(updateById),
-  removeById: ctrlWrapper(removeById)
+  removeById: ctrlWrapper(removeById),
+  updateFavorite: ctrlWrapper(updateFavorite)
 };
