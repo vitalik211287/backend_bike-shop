@@ -1,19 +1,18 @@
-const Product = require("../../models/product")
-const { v4 } = require("uuid");
+const {Product} = require("../../models/product")
 
-// const { HttpError } = require("../../helpers");
-// const { addSchema } = require("../../middlewares");
 
 const add = async (req, res) => {
-  const newProduct = { ...req.body, id: v4() };
-  Product.push(newProduct);
-  res.status(201).json({
-    status: "success",
-    code: 201,
-    data: {
-      result: newProduct,
-    },
-  });
+   const result =  await Product.create(req.body);
+  res.status(201).json(
+    // {
+    // status: "success",
+    // code: 201,
+    // data: {
+      // result: 
+      result,
+  //   },
+  // }
+  );
 };
 
 module.exports = add;
