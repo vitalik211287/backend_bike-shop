@@ -6,10 +6,10 @@ const getAll = async (req, res) => {
   //   status: "success",
   //   code: 200,
   //   data: {
-  //     result: Product.find(),
+  //     result: await JSON.stringify(Product.find()),
   //   },
   // });
-  const result = await Product.find();
+  const result = await Product.find({});
   res.json(result);
 };
 

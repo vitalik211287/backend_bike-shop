@@ -1,5 +1,6 @@
 const { HttpError } = require("../../helpers");
 const products = require("../../data/velo.json");
+// const Product = require("../../models/product");
 
 const getById = async (req, res) => {
   const { id } = req.params;
