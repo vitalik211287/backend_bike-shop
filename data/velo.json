@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": "64a06ecef171a4de6533fadc",
     "brend": "Pride",
     "model": "model-1",
     "img": "https://velosiped.com/assets/cache/images/img/velosiped-marin-2022-rift-zone-3-29-pomaranchevo-chornij-s-skd-92-89-312x255-916.jpeg",
@@ -11,7 +11,7 @@
     "favorite": false
   },
   {
-    "id": "2",
+    "id": "64a06ecef171a4de6533fadd",
     "brend": "Pride",
     "model": "model-2",
     "img": "https://velosiped.com/assets/cache/images/img/velosiped-trek-2022-fuel-ex-5-29-chornij-l-5260696-312x255-066.jpeg",
@@ -22,7 +22,9 @@
     "favorite": false
   },
   {
-    "id": "3",
+    "_id": {
+      "$oid": "64a06ecef171a4de6533fade"
+    },
     "brend": "Pride",
     "model": "model-3",
     "img": "https://velosiped.com/assets/cache/images/img/velosiped-trek-2022-slash-7-xt-29-zelenij-m-5259590-312x255-aba.jpeg",
@@ -33,7 +35,9 @@
     "favorite": false
   },
   {
-    "id": "4",
+    "_id": {
+      "$oid": "64a06ecef171a4de6533fadf"
+    },
     "brend": "Pride",
     "model": "model-4",
     "img": "https://velosiped.com/assets/cache/images/img/velosiped-marin-2023-rift-zone-carbon-1-29-chervonij-chornij-xl-ske-03-68-1000x-5a7.jpeg",
@@ -44,7 +48,9 @@
     "favorite": false
   },
   {
-    "id": "5",
+    "_id": {
+      "$oid": "64a06ecef171a4de6533fae0"
+    },
     "brend": "Pride",
     "model": "model-5",
     "img": "https://velosiped.com/assets/cache/images/img/velosiped-trek-2022-top-fuel-7-deorext-29-chornij-l-5259767-312x255-e13.jpeg",
@@ -55,7 +61,9 @@
     "favorite": false
   },
   {
-    "id": "6",
+    "_id": {
+      "$oid": "64a06ecef171a4de6533fae1"
+    },
     "brend": "Pride",
     "model": "model-6",
     "img": "https://velosiped.com/assets/cache/images/img/velosiped-trek-2022-remedy-8-xt-275-zelenij-l-5259538-312x255-823.jpeg",
@@ -66,7 +74,9 @@
     "favorite": false
   },
   {
-    "id": "7",
+    "_id": {
+      "$oid": "64a06ecef171a4de6533fae2"
+    },
     "brend": "Pride",
     "model": "model-7",
     "img": "https://velosiped.com/assets/cache/images/img/velosiped-marin-2023-nicasio-28-chornij-56sm-skd-24-43-312x255-ea7.jpeg",
@@ -77,7 +87,9 @@
     "favorite": false
   },
   {
-    "id": "8",
+    "_id": {
+      "$oid": "64a06ecef171a4de6533fae3"
+    },
     "brend": "Pride",
     "model": "model-8",
     "img": "https://velosiped.com/assets/cache/images/img/velosiped-marin-2023-nicasio-28-sriblyastij-52sm-skd-66-96-1000x-0e1.jpeg",
@@ -88,7 +100,9 @@
     "favorite": false
   },
   {
-    "id": "9",
+    "_id": {
+      "$oid": "64a06ecef171a4de6533fae4"
+    },
     "brend": "Pride",
     "model": "model-9",
     "img": "https://velosiped.com/assets/cache/images/img/velosiped-gt-2023-grade-elite-28-burij-48sm-ske-52-81-1000x-5a7.jpeg",
@@ -99,7 +113,9 @@
     "favorite": false
   },
   {
-    "id": "10",
+    "_id": {
+      "$oid": "64a06ecef171a4de6533fae5"
+    },
     "brend": "Pride",
     "model": "model-10",
     "img": "https://velosiped.com/assets/cache/images/img/velosiped-marin-2023-nicasio-275-zelenij-58sm-ske-03-45-312x255-87b.jpeg",
@@ -110,7 +126,9 @@
     "favorite": false
   },
   {
-    "id": "11",
+    "_id": {
+      "$oid": "64a06ecef171a4de6533fae6"
+    },
     "brend": "Pride",
     "model": "model-11",
     "img": "https://velosiped.com/assets/cache/images/img/velosiped-marin-2023-nicasio-275-pisochnij-56sm-skd-90-35-1000x-0b5.jpeg",

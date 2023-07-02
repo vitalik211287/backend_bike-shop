@@ -1,15 +1,14 @@
-const Product = require("../../models/product")
+// const Product = require("../../models/product")
+const products = require("../../data/velo.json");
 
 const getAll = async (req, res) => {
-  // res.json({
-  //   status: "success",
-  //   code: 200,
-  //   data: {
-  //     result: Product,
-  //   },
-  // });
-  const result = await Product.find()
-  res.json(result)
+  res.json({
+    status: "success",
+    code: 200,
+    data: {
+      result: products,
+    },
+  });
 };
 
 module.exports = getAll;
