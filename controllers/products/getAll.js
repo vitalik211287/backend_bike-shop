@@ -1,11 +1,11 @@
-const products = require("../../data/velo.json"); // const fs = require('fs/promises')
+const Product = require("../../models/product")
 
 const getAll = async (req, res) => {
   res.json({
     status: "success",
     code: 200,
     data: {
-      result: products,
+      result: Product,
     },
   });
 };
