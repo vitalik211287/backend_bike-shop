@@ -37,7 +37,7 @@ const updateFavoriteSchema = Joi.object({
   favorite: Joi.boolean().truthy("yes").falsy("no").sensitive().required(),
 });
 
-const schema = {
+const schemas = {
   addSchema,
   updateFavoriteSchema,
 };
@@ -46,5 +46,5 @@ const Product = model("product", productSchema);
 
 module.exports = {
   Product,
-  schema,
+  schemas,
 };
