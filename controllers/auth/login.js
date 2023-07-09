@@ -1,8 +1,9 @@
 const { HttpError } = require("../../helpers");
 const { User } = require("../../models/user");
-const jvt = require("jsonwebtoken")
-const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken")
 const {SECRET_KEY} = process.env
+const bcrypt = require("bcryptjs");
+
 
 const login = async (req, res) => {
   const { email, password } = req.body;
@@ -19,7 +20,7 @@ const login = async (req, res) => {
     id: user._id,
   }
 
-  const token = jvt.sign(payload,SECRET_KEY, {expiresIn: "23h"});
+  const token = jwt.sign(payload,SECRET_KEY, {expiresIn: "23h"});
   res.json({
     token,
   });
