@@ -2,7 +2,8 @@ const {Product} = require("../../models/product")
 
 
 const add = async (req, res) => {
-   const result =  await Product.create(req.body);
+  const{_id: owner} = req.user;
+   const result =  await Product.create({...req.body, owner});
   res.status(201).json(
     // {
     // status: "success",
