@@ -10,7 +10,7 @@ const getAll = async (req, res) => {
   //     result: await JSON.stringify(Product.find()),
   //   },
   // });
-  const result = await Product.find({owner}, "-createdAt -updatedAt");
+  const result = await Product.find({owner}, "-createdAt -updatedAt").populate("owner", "name email");
   res.json(result);
 };
 
