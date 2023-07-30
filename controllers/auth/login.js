@@ -1,9 +1,8 @@
 const { HttpError } = require("../../helpers");
 const { User } = require("../../models/user");
-const jwt = require("jsonwebtoken")
-const {SECRET_KEY} = process.env
+const jwt = require("jsonwebtoken");
+const { SECRET_KEY } = process.env;
 const bcrypt = require("bcryptjs");
-
 
 const login = async (req, res) => {
   const { email, password } = req.body;
@@ -18,9 +17,10 @@ const login = async (req, res) => {
 
   const payload = {
     id: user._id,
-  }
+  };
 
-  const token = jwt.sign(payload,SECRET_KEY, {expiresIn: "23h"});
+  const token = jwt.sign(payload, SECRET_KEY, { expiresIn: "23h" });
+  await User.findByIdAndUpdate(user._id, { token });
   res.json({
     token,
   });
